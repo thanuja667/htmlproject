@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/audio.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio file insertion</title>
+    <!-- internal css with bacground image in the content using csss -->
+    <style>
+        h2{
+            background-color: blanchedalmond;
+            color: white;
+            padding: 5px;
+        }
+        p{
+            background-color: cadetblue;
+            color: white;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 20px;
+            background-image: url('image.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        body{
+            background-image:url("k.png");
+             background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Audio Demo
+    </h1>
+    <audio controls="">
+        <source src="audio.mp3" type="audio/mpeg">
+        your browser does not support the sudio element
+    </audio>
+    <h1 align="center">CSS demooo</h1>
+    <!-- inline css code is this  -->
+    <h2 style="background-color: aquamarine;color: white; padding:;">this is header 1</h2> 
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores esse ex optio corrupti quidem neque atque quia tempora, laudantium modi dignissimos distinctio dolores nihil deserunt sit consequatur perspiciatis quos amet.</p>
+    <h2>this is header 2</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores esse ex optio corrupti quidem neque atque quia tempora, laudantium modi dignissimos distinctio dolores nihil deserunt sit consequatur perspiciatis quos amet.</p>
+    <h2>this is header 3</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores esse ex optio corrupti quidem neque atque quia tempora, laudantium modi dignissimos distinctio dolores nihil deserunt sit consequatur perspiciatis quos amet.</p>
+    <h2>this is header 4</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores esse ex optio corrupti quidem neque atque quia tempora, laudantium modi dignissimos distinctio dolores nihil deserunt sit consequatur perspiciatis quos amet.</p>
+    
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

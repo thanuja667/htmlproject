@@ -1,0 +1,111 @@
+body {
+  background-color: floralwhite;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fffaf0;
+  padding: 10px 40px;
+  border-bottom: 2px solid #f4b6b6;
+}
+
+header img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+header h2 {
+  color: #444;
+  font-size: 28px;
+  flex-grow: 1;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Navbar */
+nav {
+  background-color: #f7dcdc;
+  padding: 12px;
+  text-align: center;
+  border-top: 2px solid #f4b6b6;
+  border-bottom: 2px solid #f4b6b6;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4081;
+  transform: scale(1.1);
+}
+
+/* Marquee Section (Pot Images) */
+marquee {
+  margin: 20px 0;
+}
+
+marquee img {
+  width: 330px; /* pot images are bigger */
+  height: 230px;
+  border-radius: 15px;
+  margin: 0 10px;
+  border: 4px solid #f4b6b6;
+  transition: all 0.3s ease;
+}
+
+marquee img:hover {
+  transform: scale(1.1);
+  border-color: #ff4081; /* border color change on hover */
+  box-shadow: 0 5px 15px rgba(255, 64, 129, 0.3);
+}
+
+/* Services Section (Land Images) */
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px 20px;
+}
+
+.services img {
+  width: 250px; /* smaller than pot images */
+  height: 170px;
+  border-radius: 15px;
+  border: 4px solid #f4b6b6;
+  transition: all 0.3s ease;
+}
+
+.services img:hover {
+  transform: scale(1.08);
+  border-color: #ff4081;
+  box-shadow: 0 8px 20px rgba(255, 64, 129, 0.3);
+}
+
+/* Footer using Grid */
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #f7dcdc;
+  text-align: center;
+  padding: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+footer div:hover {
+  color: #ff4081;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
